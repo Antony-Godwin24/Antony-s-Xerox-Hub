@@ -40,7 +40,8 @@ Welcome to **Antony’s Xerox Hub** – a student-run printing and copy center b
 
 ## Screenshots
 
-_(Add screenshots of your homepage, services, about, mission, and contact sections here if needed)_
+<img width="1918" height="985" alt="image" src="https://github.com/user-attachments/assets/9417eee5-0fa1-4d85-bcef-c3fd70a2b400" />
+
 
 ---
 
