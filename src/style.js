@@ -1,4 +1,9 @@
 const styles = {
+  navbar: {
+    position: 'sticky',
+    top: 0,
+    zIndex: 1000,
+  },
   container: {
     fontFamily: 'Segoe UI, sans-serif',
     backgroundColor: '#f8f9fa',
@@ -9,13 +14,8 @@ const styles = {
     textAlign: 'center',
     padding: '80px 20px',
   },
-  heroTitle: {
-    fontWeight: 'bold',
-    mb: 2,
-  },
-  heroSubtitle: {
-    mb: 3,
-  },
+  heroTitle: { fontWeight: 'bold', mb: 2 },
+  heroSubtitle: { mb: 3 },
   heroText: {
     maxWidth: '600px',
     margin: '0 auto 30px',
@@ -27,7 +27,6 @@ const styles = {
     padding: '12px 30px',
     fontSize: '16px',
     textTransform: 'none',
-    transition: 'all 0.3s',
     '&:hover': {
       backgroundColor: '#ff4c4c',
       transform: 'scale(1.05)',
@@ -35,6 +34,9 @@ const styles = {
   },
   section: {
     padding: '60px 20px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
     textAlign: 'center',
   },
   sectionTitle: {
@@ -44,11 +46,12 @@ const styles = {
   },
   servicesGrid: {
     marginTop: '20px',
+    justifyContent: 'center',
   },
   serviceCard: {
     padding: '30px',
     borderRadius: '16px',
-    transition: 'all 0.3s',
+    transition: 'all ease 0.3s',
     textAlign: 'center',
     '&:hover': {
       transform: 'translateY(-8px)',
@@ -71,6 +74,9 @@ const styles = {
   about: {
     padding: '60px 20px',
     backgroundColor: 'white',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
     textAlign: 'center',
   },
   aboutText: {
@@ -96,14 +102,36 @@ const styles = {
     marginTop: '10px',
     color: '#555',
   },
-  statIcon: {
-    fontSize: '36px',
-    color: '#667eea',
+  mission: {
+    padding: '60px 20px',
+    backgroundColor: '#ffffff',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    textAlign: 'center',
+  },
+  missionText: {
+    maxWidth: '900px',
+    fontSize: '18px',
+    color: '#555',
+    lineHeight: 1.7,
+    marginTop: '20px',
+  },
+  whyChoose: {
+    padding: '60px 20px',
+    backgroundColor: '#f4f6f8',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    textAlign: 'center',
   },
   contact: {
     background: 'linear-gradient(to right, #2c3e50, #34495e)',
     padding: '60px 20px',
     color: 'white',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
     textAlign: 'center',
   },
   contactItem: {
