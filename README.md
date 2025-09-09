@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Antony’s Xerox Hub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Antony’s Xerox Hub** – a student-run printing and copy center built to serve students and businesses with top-quality document services. This project is built using **React.js** and **Material-UI (MUI)** for the frontend.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Hero Section**
+  - Highlights the purpose of the hub and provides a clear CTA for users.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Services Section**
+  - Printing (B/W & Color)
+  - Photocopying
+  - Scanning & Digital Conversion
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **About Section**
+  - Provides background information about the hub.
+  - Displays statistics like number of happy students, pages printed, working hours, and student ratings.
 
-### `npm test`
+- **Mission Section**
+  - Highlights the goals and mission of the hub.
+  - Shows customer-related statistics such as happy customers, documents printed, years of excellence, and customer support availability.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Why Choose Section**
+  - Explains the benefits of choosing the hub for printing and document services.
 
-### `npm run build`
+- **Contact Section**
+  - Provides contact information including phone, email, and physical address.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend:** React.js, Material-UI (MUI)
+- **Icons:** Material-UI Icons
+- **Styling:** MUI `sx` prop and custom CSS (beginner-friendly)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+_(Add screenshots of your homepage, services, about, mission, and contact sections here if needed)_
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+1. Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://github.com/Antony-Godwin24/Xerox-Shop-Entrepreneur.git
+cd Xerox-Shop-Entrepreneur
+````
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install dependencies:
 
-### Code Splitting
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Start the development server:
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The app should run at `http://localhost:3000`.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Antony Godwin** – 3rd-year CSE Student & Entrepreneur
 
-### Deployment
+* GitHub: [https://github.com/Antony-Godwin24](https://github.com/Antony-Godwin24)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is for educational and portfolio purposes. You can freely explore and modify the code.
+
+```
+
+Do you want me to do that?
+```
