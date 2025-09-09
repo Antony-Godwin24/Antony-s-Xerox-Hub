@@ -7,10 +7,6 @@ import styles from './style';
 import NavBar from './NavBar.js';
 import Form from './Form.js';
 
-// const navigate=useNavigate();
-// const handleButton = () => {
-//   navigate('/form');
-// };
 
 const services = [
   {
