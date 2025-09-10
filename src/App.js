@@ -495,10 +495,10 @@ export default function App() {
                 <Link href="https://www.google.com/maps/place/Chennai+-+Theni+Hwy,+Samayapuram,+Tamil+Nadu+621112/@10.9280675,78.7411634,18z/data=!3m1!4b1!4m6!3m5!1s0x3baaf735d88ee477:0x891f268c4de7a518!8m2!3d10.9280675!4d78.7420738!16s%2Fg%2F11gj3cv08h?entry=ttu&g_ep=EgoyMDI1MDkwNy4wIKXMDSoASAFQAw%3D%3D" style={{ color: "white", textDecoration: "none" }}>📍 Directions</Link>
               </Box>
               <Box sx={{ display: "flex", gap: 2 }}>
-                <IconButton sx={{ color: "white" }} href="https://wa.me/919994982519"><WhatsApp /></IconButton>
-                <IconButton sx={{ color: "white" }} href="mailto:antonygodwin08@gmail.com"><Gmail /></IconButton>
-                <IconButton sx={{ color: "white" }} href="https://www.linkedin.com/in/antony-godwin-s-7143ab2a4/"><LinkedIn /></IconButton>
-                <IconButton sx={{ color: "white" }} href="https://github.com/Antony-Godwin24"><GitHub /></IconButton>
+                <IconButton sx={{ color: "white" }} target="_blank" href="https://wa.me/919994982519"><WhatsApp /></IconButton>
+                <IconButton sx={{ color: "white" }} target="_blank" href="mailto:antonygodwin08@gmail.com"><Gmail /></IconButton>
+                <IconButton sx={{ color: "white" }} target="_blank" href="https://www.linkedin.com/in/antony-godwin-s-7143ab2a4/"><LinkedIn /></IconButton>
+                <IconButton sx={{ color: "white" }} target="_blank" href="https://github.com/Antony-Godwin24"><GitHub /></IconButton>
               </Box>
             </Grid>
           </Grid>
