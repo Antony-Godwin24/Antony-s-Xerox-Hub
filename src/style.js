@@ -118,6 +118,7 @@ const styles = {
     marginTop: '20px',
   },
   whyChoose: {
+    marginBottom: '60px',
     padding: '60px 20px',
     backgroundColor: '#f4f6f8',
     display: 'flex',
@@ -127,23 +128,70 @@ const styles = {
   },
   contact: {
     background: 'linear-gradient(to right, #2c3e50, #34495e)',
-    padding: '60px 20px',
+    padding: '80px 20px',
     color: 'white',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     textAlign: 'center',
+    borderTop: '6px solid #ff6b6b',
+    boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
   },
-  contactItem: {
+
+  contactForm: {
+    maxWidth: '600px',
+    width: '100%',
+    backgroundColor: '#ffffff',
+    padding: '40px',
+    borderRadius: '20px',
+    boxShadow: '0 10px 30px rgba(0,0,0,0.15)',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
-    gap: '10px',
-    fontSize: '18px',
+    gap: '24px',
   },
-  contactIcon: {
-    fontSize: '40px',
-    color: '#ff6b6b',
+
+  contactTextField: {
+    backgroundColor: '#f5f7fa',
+    borderRadius: '10px',
+    '& .MuiOutlinedInput-root': {
+      borderRadius: '10px',
+    },
+  },
+
+  contactButton: {
+    backgroundColor: '#ff6b6b',
+    padding: '14px 30px',
+    fontSize: '16px',
+    textTransform: 'none',
+    fontWeight: 'bold',
+    borderRadius: '10px',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+    '&:hover': {
+      backgroundColor: '#ff4c4c',
+      transform: 'translateY(-2px)',
+      boxShadow: '0 6px 16px rgba(0,0,0,0.15)',
+    },
+  },
+
+  footer: {
+    backgroundColor: '#2c3e50',
+    color: 'white',
+    padding: '20px 0',
+    textAlign: 'center',
+    borderTop: '6px solid #ff6b6b',
+    marginTop: '0px',
+  },
+  footerText: {
+    marginBottom: '8px',
+  },
+  footerLinks: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '20px',
+    '& a': {
+      color: 'white',
+      fontSize: '14px',
+    },
   },
 };
 

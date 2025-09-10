@@ -1,7 +1,7 @@
 import React from 'react';
-import { Box, Typography, Button, Grid, Paper, TextField } from '@mui/material';
+import { Box, Typography, Button, Grid, Paper, TextField , Link} from '@mui/material';
 import {
-  Print, CopyAll, Scanner, Email, Phone, Room
+  Print, CopyAll, Scanner
 } from '@mui/icons-material';
 import styles from './style';
 
@@ -144,79 +144,78 @@ export default function App() {
             </Typography>
           </Box>
 
-          {/* Contact Section */}
-          {/* Contact Section */}
-          <Box id='contact' sx={styles.contact}>
-            <Typography variant="h4" sx={{ color: 'white', marginBottom: '30px' }}>
-              Contact Us
-            </Typography>
-            
-            <Box
-              component="form"
-              onSubmit={async (e) => {
-                e.preventDefault();
-                const form = e.target;
-                const data = new FormData(form);
-
-                const response = await fetch('https://formspree.io/f/mgvldyja', {
-                  method: 'POST',
-                  body: data,
-                  headers: { Accept: 'application/json' },
-                });
-
-                if (response.ok) {
-                  alert("✅ Message sent successfully!");
-                  form.reset();
-                } else {
-                  alert("❌ Something went wrong. Please try again.");
-                }
-              }}
-              method="POST"
-              sx={{ maxWidth: '600px', margin: '0 auto' }}
-            >
-              <Grid container spacing={3}>
-                <Grid item xs={12}>
-                  <TextField
-                    name="name"
-                    label="Your Name"
-                    fullWidth
-                    required
-                    variant="outlined"
-                    sx={{ backgroundColor: 'white' }}
-                  />
-                </Grid>
-                          <Grid item xs={12}>
-                            <TextField
-                              name="email"
-                              label="Your Email"
-                              type="email"
-                              fullWidth
-                              required
-                              variant="outlined"
-                              sx={{ backgroundColor: 'white' }}
-                            />
-                          </Grid>
-                          <Grid item xs={12}>
-                            <TextField
-                              name="message"
-                              label="Your Message"
-                              multiline
-                              rows={4}
-                              fullWidth
-                              required
-                              variant="outlined"
-                              sx={{ backgroundColor: 'white' }}
-                            />
-                          </Grid>
-                          <Grid item xs={12}>
-                            <Button type="submit" variant="contained" color="primary" fullWidth>
-                              Send
-                            </Button>
-                          </Grid>
-                        </Grid>
-                      </Box>
-                    </Box>
+        {/* Contact Section */}
+        <Box id='contact' sx={styles.contact}>
+          <Typography variant="h4" sx={{ color: 'white', marginBottom: '30px' }}>
+            Contact Us
+          </Typography>
+          <Box
+            component="form"
+            onSubmit={async (e) => {
+              e.preventDefault();
+              const form = e.target;
+              const data = new FormData(form);
+              const response = await fetch('https://formspree.io/f/mgvldyja', {
+                method: 'POST',
+                body: data,
+                headers: { Accept: 'application/json' },
+              });
+              if (response.ok) {
+                alert("Message sent successfully!");
+                form.reset();
+              } else {
+                alert("Something went wrong. Please try again.");
+              }
+            }}
+            method="POST"
+            sx={styles.contactForm}
+          >
+            <TextField
+              name="name"
+              label="Your Name"
+              fullWidth
+              required
+              variant="outlined"
+              sx={styles.contactTextField}
+            />
+            <TextField
+              name="email"
+              label="Your Email"
+              type="email"
+              fullWidth
+              required
+              variant="outlined"
+              sx={styles.contactTextField}
+            />
+            <TextField
+              name="message"
+              label="Your Message"
+              multiline
+              rows={4}
+              fullWidth
+              required
+              variant="outlined"
+              sx={styles.contactTextField}
+            />
+            <Button type="submit" variant="contained" sx={styles.contactButton}>
+              Send Message
+            </Button>
+          </Box>
         </Box>
-      </>
+
+        {/* Footer */}
+        <Box sx={styles.footer}>
+          <Typography variant="body2" sx={styles.footerText}>
+            © {new Date().getFullYear()} Antony’s Xerox Hub — All Rights Reserved.
+          </Typography>
+          <Box sx={styles.footerLinks}>
+            <Link href="#home" underline="hover" color="inherit">Home</Link>
+            <Link href="#services" underline="hover" color="inherit">Services</Link>
+            <Link href="#contact" underline="hover" color="inherit">Contact</Link>
+          </Box>
+        </Box>
+
+      </Box>
+    </>
   );
 }
