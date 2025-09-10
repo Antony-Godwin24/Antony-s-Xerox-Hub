@@ -4,8 +4,6 @@ import {
   Print, CopyAll, Scanner, Email, Phone, Room
 } from '@mui/icons-material';
 import styles from './style';
-import NavBar from './NavBar.js';
-import Form from './Form.js';
 
 
 const services = [
