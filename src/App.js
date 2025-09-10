@@ -178,7 +178,7 @@ export default function App() {
               <Button variant="contained" sx={styles.primaryButton}>
                 🚀 Get Started Now!
               </Button>
-              <Button variant="outlined" sx={styles.secondaryButton}>
+              <Button variant="outlined" sx={styles.secondaryButton} target="_blank" href="tel:+919994982519">
                 📞 Call: +91 9994982519
               </Button>
             </Box>
@@ -455,10 +455,10 @@ export default function App() {
                   Or Contact Us Directly
                 </Typography>
                 <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', flexWrap: 'wrap' }}>
-                  <Button variant="contained" startIcon={<WhatsApp />} sx={{ background: '#25D366', '&:hover': { background: '#20b954' }, borderRadius: '25px', px: 3 }} href="https://wa.me/919994982519">
+                  <Button variant="contained" startIcon={<WhatsApp />} sx={{ background: '#25D366', '&:hover': { background: '#20b954' }, borderRadius: '25px', px: 3 }} target="_blank" href="https://wa.me/919994982519">
                     WhatsApp
                   </Button>
-                  <Button variant="contained" startIcon={<Phone />} sx={{ background: '#007bff', '&:hover': { background: '#0056b3' }, borderRadius: '25px', px: 3 }} href="tel:+919994982519">
+                  <Button variant="contained" startIcon={<Phone />} sx={{ background: '#007bff', '&:hover': { background: '#0056b3' }, borderRadius: '25px', px: 3 }} target="_blank" href="tel:+919994982519">
                     Call Now
                   </Button>
                 </Box>
