@@ -4,44 +4,55 @@ Welcome to **Antony’s Xerox Hub** – a student-run printing and copy center b
 
 ---
 
+## 🚀 Live Demo
+
+👉 [Visit the Live Site](https://antony-s-xerox-hub.vercel.app/)
+
+---
+
 ## Features
 
-- **Hero Section**
-  - Highlights the purpose of the hub and provides a clear CTA for users.
+* **Hero Section**
 
-- **Services Section**
-  - Printing (B/W & Color)
-  - Photocopying
-  - Scanning & Digital Conversion
+  * Highlights the purpose of the hub and provides a clear CTA for users.
 
-- **About Section**
-  - Provides background information about the hub.
-  - Displays statistics like number of happy students, pages printed, working hours, and student ratings.
+* **Services Section**
 
-- **Mission Section**
-  - Highlights the goals and mission of the hub.
-  - Shows customer-related statistics such as happy customers, documents printed, years of excellence, and customer support availability.
+  * Printing (B/W & Color)
+  * Photocopying
+  * Scanning & Digital Conversion
 
-- **Why Choose Section**
-  - Explains the benefits of choosing the hub for printing and document services.
+* **About Section**
 
-- **Contact Section**
-  - Provides contact information including phone, email, and physical address.
+  * Provides background information about the hub.
+  * Displays statistics like number of happy students, pages printed, working hours, and student ratings.
+
+* **Mission Section**
+
+  * Highlights the goals and mission of the hub.
+  * Shows customer-related statistics such as happy customers, documents printed, years of excellence, and customer support availability.
+
+* **Why Choose Section**
+
+  * Explains the benefits of choosing the hub for printing and document services.
+
+* **Contact Section**
+
+  * Provides contact information including phone, email, and physical address.
 
 ---
 
 ## Tech Stack
 
-- **Frontend:** React.js, Material-UI (MUI)
-- **Icons:** Material-UI Icons
-- **Styling:** MUI `sx` prop and custom CSS (beginner-friendly)
+* **Frontend:** React.js, Material-UI (MUI)
+* **Icons:** Material-UI Icons
+* **Styling:** MUI `sx` prop and custom CSS (beginner-friendly)
 
 ---
 
 ## Screenshots
 
 <img width="1918" height="985" alt="image" src="https://github.com/user-attachments/assets/9417eee5-0fa1-4d85-bcef-c3fd70a2b400" />
-
 
 ---
 
@@ -52,7 +63,7 @@ Welcome to **Antony’s Xerox Hub** – a student-run printing and copy center b
 ```bash
 git clone https://github.com/Antony-Godwin24/Xerox-Shop-Entrepreneur.git
 cd Xerox-Shop-Entrepreneur
-````
+```
 
 2. Install dependencies:
 
@@ -70,12 +81,12 @@ The app should run at `http://localhost:3000`.
 
 ---
 
-
 ## Author
 
 **Antony Godwin** – 3rd-year CSE Student & Entrepreneur
 
-* GitHub: [https://github.com/Antony-Godwin24](https://github.com/Antony-Godwin24)
+* GitHub: [Antony-Godwin24](https://github.com/Antony-Godwin24)
+* Live Project: [https://antony-s-xerox-hub.vercel.app](https://antony-s-xerox-hub.vercel.app)
 
 ---
 
@@ -83,7 +94,4 @@ The app should run at `http://localhost:3000`.
 
 This project is for educational and portfolio purposes. You can freely explore and modify the code.
 
-```
-
-Do you want me to do that?
-```
+---
