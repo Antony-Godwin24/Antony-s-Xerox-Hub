@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Button, Grid, Paper } from '@mui/material';
+import { Box, Typography, Button, Grid, Paper, TextField } from '@mui/material';
 import {
   Print, CopyAll, Scanner, Email, Phone, Room
 } from '@mui/icons-material';
@@ -145,31 +145,77 @@ export default function App() {
           </Box>
 
           {/* Contact Section */}
+          {/* Contact Section */}
           <Box id='contact' sx={styles.contact}>
-            <Typography variant="h4" sx={{ color: 'white', marginBottom: '30px' }}>Contact Us</Typography>
-            <Box sx={{ maxWidth: '900px', width: '100%' }}>
-              <Grid container spacing={4} justifyContent="center">
-                <Grid item xs={12} md={4}>
-                  <Box sx={styles.contactItem}>
-                    <Phone sx={styles.contactIcon} />
-                    <Typography>+91 99949 82519</Typography>
-                  </Box>
+            <Typography variant="h4" sx={{ color: 'white', marginBottom: '30px' }}>
+              Contact Us
+            </Typography>
+            
+            <Box
+              component="form"
+              onSubmit={async (e) => {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+
+                const response = await fetch('https://formspree.io/f/mgvldyja', {
+                  method: 'POST',
+                  body: data,
+                  headers: { Accept: 'application/json' },
+                });
+
+                if (response.ok) {
+                  alert("✅ Message sent successfully!");
+                  form.reset();
+                } else {
+                  alert("❌ Something went wrong. Please try again.");
+                }
+              }}
+              method="POST"
+              sx={{ maxWidth: '600px', margin: '0 auto' }}
+            >
+              <Grid container spacing={3}>
+                <Grid item xs={12}>
+                  <TextField
+                    name="name"
+                    label="Your Name"
+                    fullWidth
+                    required
+                    variant="outlined"
+                    sx={{ backgroundColor: 'white' }}
+                  />
                 </Grid>
-                <Grid item xs={12} md={4}>
-                  <Box sx={styles.contactItem}>
-                    <Email sx={styles.contactIcon} />
-                    <Typography>antonygodwin08@gmail.com</Typography>
-                  </Box>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                  <Box sx={styles.contactItem}>
-                    <Room sx={styles.contactIcon} />
-                    <Typography>Near KRCE Entrance, Samayapuram</Typography>
-                  </Box>
-                </Grid>
-              </Grid>
-            </Box>
-          </Box>
+                          <Grid item xs={12}>
+                            <TextField
+                              name="email"
+                              label="Your Email"
+                              type="email"
+                              fullWidth
+                              required
+                              variant="outlined"
+                              sx={{ backgroundColor: 'white' }}
+                            />
+                          </Grid>
+                          <Grid item xs={12}>
+                            <TextField
+                              name="message"
+                              label="Your Message"
+                              multiline
+                              rows={4}
+                              fullWidth
+                              required
+                              variant="outlined"
+                              sx={{ backgroundColor: 'white' }}
+                            />
+                          </Grid>
+                          <Grid item xs={12}>
+                            <Button type="submit" variant="contained" color="primary" fullWidth>
+                              Send
+                            </Button>
+                          </Grid>
+                        </Grid>
+                      </Box>
+                    </Box>
         </Box>
       </>
   );
